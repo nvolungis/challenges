@@ -9,7 +9,6 @@
         len;
 
      len = s1.length + s2.length < k ? s1.length + s2.length : k;
-     console.log(len);
 
      for(c; c < len; c++){
        if(s1[i] < s2[j]){
