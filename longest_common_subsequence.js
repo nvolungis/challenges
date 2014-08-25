@@ -13,7 +13,7 @@
 
     function LCS(i, j){
       var k, l, result;
-      if(!!memo[i][j]) return memo[i][j];
+      if(memo[i][j] != null) return memo[i][j];
 
       if(i == 0 || j == 0){
         result = 0;
@@ -28,7 +28,6 @@
       memo[i][j] = result;
       return result;
     }
-
 
     function build_memo(s1, s2){
       var l1 = s1.length,
